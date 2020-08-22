@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calculate your Grades</h2>
+    <div class="container" id="scoreboard">
+       
+        <table class="table bg-dark table-dark mx-auto">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Score</th>    
+                    <th>Grade</th>
+                    </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><input class="text" required></td> 
+                    <td class="grade"></td> 
+                     <td><span data-id='1' class = "cancel-btn"> &#128473;</span></td>
+                 </tr>
+                 <tr>
+                     <td><input class="text" required></td> 
+                     <td class="grade"></td> 
+                     <td><span data-id='2' class = "cancel-btn"> &#128473;</span></td>
+                  </tr>
+                  <tr>
+                     <td><input class="text" required></td> 
+                     <td class="grade"></td> 
+                      <td><span data-id='3' class = "cancel-btn"> &#128473;</span></td>
+                  </tr>
+                  <tr>
+                     <td><input class="text" required></td> 
+                     <td class="grade"></td> 
+                      <td><span data-id='4' class = "cancel-btn"> &#128473;</span></td>
+                  </tr>
+                  <tr>
+                     <td><input class="text" required></td> 
+                     <td class="grade"></td> 
+                      <td><span data-id='5' class = "cancel-btn"> &#128473;</span></td>
+                  </tr>
+                  <tr>
+                     <td><input class="text" required></td> 
+                     <td class="grade"></td> 
+                      <td><span data-id='6' class = "cancel-btn"> &#128473;</span></td>
+                  </tr>
+                  <tr>
+                    <td><input class="text" required></td> 
+                    <td class="grade"></td> 
+                     <td><span data-id='7' class = "cancel-btn"> &#128473;</span></td>
+                 </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="btn-container mx-auto">
+        <button id = "add" class="bg-success"> Add Scores</button>
+        <button id = "calculate" class="bg-info"> Calculate Grade</button>
+        <button id = "clear" class="bg-warning"> Clear All</button>
+    </div>
+
+    <div class="grade-container mx-auto">
+        <h3> Calculate your Average </h3>
+        <form class="mx-auto">
+            <input type="text" id='avg'> <br>
+            <button id = "calculateAverage" class="bg-primary"> Calculate</button>
+        </form>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
